@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/img_exitmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="exit_cn"
+            app:srcCompat="@android:drawable/btn_dialog" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chức năng"
+            android:gravity="center"
+            android:textSize="30sp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_ptb2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="giải phương trình bậc 2"
+            android:onClick="ptb_test"
+            android:textSize="15dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_hpt2a"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="pt2a"
+            android:text="giải hệ phương trình 2 ẩn"
+            android:textSize="15dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_hpt3a"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="giải hệ phương trình 3 ẩn"
+            android:textSize="15dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_bptb2"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="giải bất phương trình bậc 2"
+            android:textSize="15dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_bptb3"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="giải bất phương trình bậc 3"
+            android:textSize="15dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_dcs"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="đổi cơ số"
+            android:textSize="15dp">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
